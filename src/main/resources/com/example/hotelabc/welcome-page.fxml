@@ -19,6 +19,9 @@
   <Text text="The best Hotel in XYZ" fill="#F8F4EC" />
   <Text text="Self-Booking Kiosk" fill="#7FC7D9" style="-fx-font-size: 16px;" />
   <Button text="Get Started"
-    style="-fx-background-color: #4F6F52; -fx-padding: 10px; -fx-text-fill: #bad5db; -fx-font-size: 16px;" />
+    style="-fx-background-color: #4F6F52; -fx-padding: 10px; -fx-text-fill: #bad5db; -fx-font-size: 16px;"
+    fx:id="welcomeButton"
+    onAction="#changeWelcomeButtonText"
+  />
 
 </VBox>

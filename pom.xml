@@ -46,10 +46,10 @@
             <version>21</version>
         </dependency>
 
-        <dependency> <!-- ignore -->
+        <dependency>
             <groupId>org.controlsfx</groupId>
             <artifactId>controlsfx</artifactId>
-            <version>11.1.2</version>
+            <version>11.1.2</version> <!-- ignore -->
         </dependency>
 
         <dependency>
@@ -139,11 +139,11 @@
             <version>6.1</version>
         </dependency>
 
-
     </dependencies>
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -153,6 +153,7 @@
                     <target>21</target>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -173,6 +174,7 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 </project>
