@@ -1,0 +1,33 @@
+flowchart TD
+    A1([Start]) --> A
+    A[/Welcome Page/] --> B[/Main Menu/]
+    B -->|Kiosk / Self| C[/Available Rooms/]
+    B -->|Phone Booking| J{Is Admin}
+    J -->|No| B
+    B -->|User Login| Q[User Login]
+    C --> D[/Guest Details/]
+    D --> B1{Less than 2 adults}
+    B1 --> |No|T[/Can't have more than 2 adults in 1 room/]
+    T --> D
+    B1 --> |Yes|E[Make Booking]
+    E --> F[/Check-in/Check-out Dates/]
+    F --> G{Confirmed}
+    G --> |No|F
+    G --> |Yes|H[Store Booking]
+    H --> I[/Confirmation Message/]
+    I --> B
+
+    J -->|Yes| L[Admin Panel]
+    L -->|Search Guests| M[Search Guests]
+    L -->|Offer Discount| N[Offer Discount]
+    L -->|Cancel Booking| O[Cancel Booking]
+    L -->|Check Out| P[Check Out]
+
+    Q --> R[/User Main Menu/]
+    R -->|Book Room| C
+    R -->|Bill Service| D
+    R -->|Manage Bookings| M
+    R -->|Available Rooms| F
+
+    B --> K[Logout]
+    K --> S([End])
