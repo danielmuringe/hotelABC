@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="20" prefWidth="400" prefHeight="400" style="-fx-background-color: #111827;">
+  <Text text="Book Room(s)" fill="white" style="-fx-font-size: 30px"/>
+  <HBox spacing="10" alignment="CENTER">
+    <RadioButton fx:id="singleRoomRadioButton" text="Single Room" style="-fx-text-fill: white;" selected="true"/>
+    <RadioButton fx:id="doubleRoomRadioButton" text="Double Room" style="-fx-text-fill: white;"/>
+  </HBox>
+  <TextField fx:id="numberOfGuestsField" promptText="Number of Guests (*max 2 adults) : " prefWidth="200" style="-fx-prompt-text-fill: white; -fx-background-color: #1f2937;"/>
+  <TextField fx:id="checkInDateField" promptText="Check-In Date : " prefWidth="200" style="-fx-prompt-text-fill: white; -fx-background-color: #1f2937;"/>
+  <TextField fx:id="checkOutDateField" promptText="Check-Out Date : " prefWidth="200" style="-fx-prompt-text-fill: white; -fx-background-color: #1f2937;"/>
+  <Button text="Confirm Booking" style="-fx-background-color: #4F6F52; -fx-border-radius: 10px; -fx-text-fill: #bad5db"/>
+  <Button text="Exit" style="-fx-background-color: #7E2553; -fx-border-radius: 10px; -fx-text-fill: #bad5db"/>
+</VBox>

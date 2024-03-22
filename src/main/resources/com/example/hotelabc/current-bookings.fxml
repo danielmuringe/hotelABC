@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="20" prefWidth="400" prefHeight="400" style="-fx-background-color: #111827;">
+  <Text text="Bookings" fill="white" style="-fx-font-size: 30px;"/>
+  <TableView prefWidth="300" prefHeight="300" style="-fx-background-color: #89beda;">
+    <columns>
+      <TableColumn text="Booking" prefWidth="100"/>
+      <TableColumn text="Customer Name" prefWidth="100"/>
+      <TableColumn text="Room Type" prefWidth="100"/>
+      <TableColumn text="No of Rooms" prefWidth="100"/>
+      <TableColumn text="No of Days" prefWidth="100"/>
+    </columns>
+  </TableView>
+</VBox>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="20" prefWidth="400" prefHeight="400" style="-fx-background-color: #111827;">
+  <Text text="Kiosk" fill="white" style="-fx-font-size: 32px;"/>
+  <Text text="Available Rooms" fill="white" style="-fx-font-size: 20px;"/>
+  <Button text="Single Rooms : 10" style="-fx-background-color: #1f2937; -fx-border-radius: 10px; -fx-text-fill: #bad5db"/>
+  <Button text="Double Rooms: 6" style="-fx-background-color: #1f2937; -fx-border-radius: 10px; -fx-text-fill: #bad5db"/>
+  <Button text="Book Room(s)" style="-fx-background-color: #4F6F52; -fx-border-radius: 10px; -fx-text-fill: #bad5db; -fx-font-size: 16px;"/>
+  <Button text="Exit" style="-fx-background-color: #7E2553; -fx-border-radius: 10px; -fx-text-fill: #bad5db"/>
+</VBox>
